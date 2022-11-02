@@ -17,13 +17,13 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final _frases = [
-    'Sou apenas um pequeno planeta que se perde diariamente em todo o seu universo.',
-    'Novas amizades serão sempre bem-vindas para darem cor e alegria ao meu dia a dia.',
-    'Gratidão não é pagamento, mas um reconhecimento que se demonstra no dia a dia.',
-    'Nem toda mudança importante acontece de repente e faz barulho, algumas são silenciosas e vão se fazendo no dia a dia.'
+    "I'm just a small planet that gets lost daily in your entire universe.",
+    "New friendships will always be welcome to give color and joy to my day to day.",
+    "Gratitude is not payment, but a recognition that is shown in everyday life.",
+    "Not every important change happens suddenly and makes noise, some are silent and are made on a daily basis."
   ];
 
-  var _fraseGerada = 'Clique abaixo para gerar uma frase!';
+  var _fraseGerada = 'Click bellow to generate new phrase';
 
   void _gerarFrase() {
     // 0, 1 , 2, 3
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Frases do dia'),
+        title: const Text('Daily phrase'),
         backgroundColor: Colors.green,
       ),
       body: Center(
@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                 color: Colors.green,
                 onPressed: _gerarFrase,
                 child: const Text(
-                  'Nova Frase',
+                  'New phrase',
                   style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               )
